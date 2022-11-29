@@ -1,0 +1,9 @@
+test-app-panos:
+  owner: panos
+  team: stroopwafel
+  subnets:
+    private: 3
+    public: 3
+    isolated: 3
+  data_sensitivity: low
+  

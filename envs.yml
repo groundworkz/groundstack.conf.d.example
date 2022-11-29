@@ -1,0 +1,16 @@
+test:
+  flow: feature-branch
+  lifecycle: "06:00-21:00"
+  backup_strategy: demo
+  imports:
+    europe: 689059566124
+
+
+production:
+  flow: main
+  backup_strategy: daily
+  req:
+    - test
+  import:
+    europe: 670110809468 
+  

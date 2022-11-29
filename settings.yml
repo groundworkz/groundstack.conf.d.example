@@ -1,0 +1,21 @@
+company_name: odysseus.network
+company_domain: odysseus.network
+company_cloud_hq: eu-central-1
+network_fabric: peering
+tier: 0 
+isolation_strategy: region/team/env
+root_account:
+   credentials: parameter_store
+
+
+git: 
+  type: Github
+  org: OdysseusCo
+
+idp:
+  - type: AzureAD
+    credentials: from_store
+
+cicd: 
+  type: GithubActions
+  hosted_type: serverless
